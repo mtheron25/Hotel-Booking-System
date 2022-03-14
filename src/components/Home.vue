@@ -6,7 +6,9 @@
       <h2>Not just nearly Luxury, but really Luxury</h2>
       <br /><br />
       <router-link :to="{ name: 'Bookings' }"
-        ><button type="button" class="btn">Explore</button></router-link
+        ><button type="button" class="btn">
+          <span>Explore</span>
+        </button></router-link
       >
     </div>
   </section>
@@ -106,10 +108,38 @@ export default {};
   font-size: 20 px;
   padding: 12px 38px;
   border-radius: 5px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #705d56;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+  background-color: #705d56;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 h1 {

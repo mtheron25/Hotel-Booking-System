@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-light "
+    class="navbar navbar-expand-lg navbar-dark bg-dark"
     aria-label="Fifth navbar example"
   >
     <div class="container-fluid">
@@ -33,11 +33,11 @@
             >
           </li>
 
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <router-link class="nav-link" aria-current="page" to="/login"
               >Login</router-link
             >
-          </li> -->
+          </li>
           <!-- <li class="nav-item">
             <router-link class="nav-link" aria-current="page" to="/bookings"
               >Bookings</router-link
@@ -65,7 +65,7 @@ export default {};
 <style>
 .navbar {
   width: 100%;
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
   /* border-color: #e7e7e7; */
   /* padding: 2px; */
 }
